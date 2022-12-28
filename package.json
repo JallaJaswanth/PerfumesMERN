@@ -10,7 +10,9 @@
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "data:import": "node backend/seeder",
-    "data:destroy": "node backend/seeder -d"
+    "data:destroy": "node backend/seeder -d",
+        "test": "echo \"Error: no test specified\" && exit 1",
+            "build": "cd backend && npm install  && cd ../frontend && npm install && npm run build"
   },
   "author": "",
   "license": "ISC",
